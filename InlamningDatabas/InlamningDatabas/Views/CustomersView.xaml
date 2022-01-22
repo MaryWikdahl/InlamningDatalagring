@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="InlamningDatabas.Views.CustomersView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:InlamningDatabas.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="850" d:DesignWidth="1000">
+    <Grid>
+
+       
+        <StackPanel>
+        <Label Content="KUNDER"/>
+
+            <ListView x:Name="tbListCustomers" Margin="10 10"  Height="300" d:ItemsSource="{d:SampleData ItemCount=5}">
+                <ListView.View >
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</UserControl>
